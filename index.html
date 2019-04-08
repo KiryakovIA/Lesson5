@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Урок 5</h1>
+		<div class="task">
+			<h3>Задача 1</h3>
+			<p>Есть кнопка button рядом с ней есть текст (Hello) необходимо при нажатии на кнопку поменять текст кнопки на (Привет)</p>
+			<button class="but1" type="button" onclick="but1_onclick()">Кнопка 1</button>
+			<p id="text1">Hello</p>
+		</div>
+		<div class="task">
+			<h3>Задача 2</h3>
+			<p>Есть кнопка button рядом с ней есть тэг &lt;b&gt;&lt;/b&gt; (Hello) необходимо при нажатии на кнопку поменять тэг на &lt;h3&gt;&lt;/h3&gt;</p>
+			<button class="but2" type="button" onclick="but2_onclick()">Кнопка 2</button>
+			<b id="text2">Hello</b>
+		</div>
+		<div class="task">
+			<h3>Задача 3</h3>
+			<p> Дан код<br>
+				&lt;h2&gt;Заголовок.&lt;/h2&gt;<br>
+				&lt;ul&gt;<br>
+				&lt;li>list&lt;/li&gt;<br>
+				&lt;li>list&lt;/li&gt;<br>
+				&lt;li>list&lt;/li&gt;<br>
+				&lt;li>list&lt;/li&gt;<br>
+				&lt;/ul&gt;<br>
+				Поменяйте содержимое списка на текс list их порядковый номер в коде.</p>
+			<button class="but3" type="button" onclick="but3_onclick()">Кнопка 3</button>
+			<h2>Заголовок.</h2>
+			<ul id="ul3">
+				<li>list</li>
+				<li>list</li>
+				<li>list</li>
+				<li>list</li>
+			</ul>
+		</div>
+		<div class="task">
+			<h3>Задача 4</h3>
+			<p>Создаека калькулятор<br>
+				Есть 2 инпута и знак вопроса между ними дальше равенство и поле результата, в итоге должно получиться<br>
+				&lt;input type="text"&gt; &lt;span&gt;?&lt;/span&gt; &lt;input type="text"&gt; = &lt;span&gt;результат&lt;/span&gt;&lt;br&gt;<br>
+				&lt;button&gt;+&lt;/button&gt; // при нажатии необходимо сложить<br>
+				&lt;button&gt;-&lt;/button&gt; // при нажатии необходимо вычесть<br>
+				&lt;button&gt;&lt;/button&gt; // при нажатии необходимо умножить<br>
+				&lt;button&gt;/&lt;/button&gt; // при нажатии необходимо делить<br></p>
+			<input id="num1" type="text"> <span>?</span> <input id="num2" type="text"> = <span id="res"></span><br>
+			<button type="button" onclick="but4_onclick(1)">+</button>
+			<button type="button" onclick="but4_onclick(2)">-</button>
+			<button type="button" onclick="but4_onclick(3)">*</button>
+			<button type="button" onclick="but4_onclick(4)">/</button>
+		</div>
+		<div class="task">
+			<h3>Задача 5</h3>
+			<p>Дан элемент ul, а в нем li #list. Вставьте перед элементом #list новую li с текстом 'Первый элемент списка'</p>
+			<button type="button" onclick="but5_onclick()">Кнопка 5</button>
+			<ul>
+				<li id="list">Существующий элемент</li>
+			</ul>
+		</div>
+		<div class="task" id="task6">
+			<h3>Задача 6</h3>
+			<p>Cоздать просто доску 8 на 8, в которой будут черные и белые ячейки</p>
+			<button type="button" onclick="but6_onclick()">Кнопка 6</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="JS/Script.js"></script>
+</body>
+
+</html>
